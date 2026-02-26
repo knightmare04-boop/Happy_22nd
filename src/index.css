@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  --color-rose-gold: #b76e79;
+  --color-midnight: #12182b;
+  --color-cream: #fdfbf7;
+}
+
+:root {
+  --rose-gold: #b76e79;
+  --midnight-blue: #12182b;
+  --soft-cream: #fdfbf7;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--midnight-blue);
+  color: var(--soft-cream);
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: radial-gradient(circle at top right, #2a1625 0%, #12182b 100%);
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(18, 24, 43, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(253, 251, 247, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
